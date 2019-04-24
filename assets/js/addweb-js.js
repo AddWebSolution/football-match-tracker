@@ -1,0 +1,218 @@
+jQuery(document).ready(function(){
+	//For Match Short-Code//
+	jQuery('#today-match').click(function(){
+		jQuery('#today-match').addClass('addweb-tab-active');
+		jQuery('#today-match').removeClass('addweb_m_tab_color');
+		jQuery('#live-match').addClass('addweb_m_tab_color');
+		jQuery('#comming-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').addClass('addweb_m_tab_color');
+		jQuery('#live-match').removeClass('addweb-tab-active');
+		jQuery('#comming-match').removeClass('addweb-tab-active');
+		jQuery('#finished-match').removeClass('addweb-tab-active');
+		jQuery('#today_match').removeClass('addweb-display-none');
+		jQuery('#live_match').addClass('addweb-display-none');
+		jQuery('#fixture_match').addClass('addweb-display-none');
+		jQuery('#finished_match').addClass('addweb-display-none');
+	});
+	jQuery('#live-match').click(function(){
+		jQuery('#live-match').addClass('addweb-tab-active');
+		jQuery('#live-match').removeClass('addweb_m_tab_color');
+		jQuery('#today-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').removeClass('addweb-tab-active');
+		jQuery('#comming-match').addClass('addweb_m_tab_color');
+		jQuery('#today-match').removeClass('addweb-tab-active');
+		jQuery('#comming-match').removeClass('addweb-tab-active');
+		jQuery('#live_match').removeClass('addweb-display-none');
+		jQuery('#today_match').addClass('addweb-display-none');
+		jQuery('#fixture_match').addClass('addweb-display-none');
+		jQuery('#finished_match').addClass('addweb-display-none');
+	});
+	jQuery('#comming-match').click(function(){
+		jQuery('#comming-match').addClass('addweb-tab-active');
+		jQuery('#comming-match').removeClass('addweb_m_tab_color');
+		jQuery('#live-match').addClass('addweb_m_tab_color');
+		jQuery('#today-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').removeClass('addweb-tab-active');
+		jQuery('#today-match').removeClass('addweb-tab-active');
+		jQuery('#live-match').removeClass('addweb-tab-active');
+		jQuery('#fixture_match').removeClass('addweb-display-none');
+		jQuery('#today_match').addClass('addweb-display-none');
+		jQuery('#live_match').addClass('addweb-display-none');
+		jQuery('#finished_match').addClass('addweb-display-none');
+	});
+	jQuery('#finished-match').click(function(){
+		jQuery('#finished-match').addClass('addweb-tab-active');
+		jQuery('#finished-match').removeClass('addweb_m_tab_color');
+		jQuery('#live-match').addClass('addweb_m_tab_color');
+		jQuery('#today-match').addClass('addweb_m_tab_color');
+		jQuery('#comming-match').addClass('addweb_m_tab_color');
+		jQuery('#comming-match').removeClass('addweb-tab-active');
+		jQuery('#today-match').removeClass('addweb-tab-active');
+		jQuery('#live-match').removeClass('addweb-tab-active');
+		jQuery('#finished_match').removeClass('addweb-display-none');
+		jQuery('#today_match').addClass('addweb-display-none');
+		jQuery('#live_match').addClass('addweb-display-none');
+		jQuery('#fixture_match').addClass('addweb-display-none');
+	});
+
+	/*Score Widget jQuery*/
+	jQuery('#addweb_score').click(function(){
+		jQuery('#addweb_score').addClass('addweb-sw-active-tab');
+		jQuery('#addweb_live').removeClass('addweb-sw-active-tab');
+		jQuery('#addweb_fixture').removeClass('addweb-sw-active-tab');
+		jQuery('#score').removeClass('addweb-display-none');
+		jQuery('#fixture').addClass('addweb-display-none');
+		jQuery('#live').addClass('addweb-display-none');
+	});
+	jQuery('#addweb_live').click(function(){
+		jQuery('#addweb_live').addClass('addweb-sw-active-tab');
+		jQuery('#addweb_score').removeClass('addweb-sw-active-tab');
+		jQuery('#addweb_fixture').removeClass('addweb-sw-active-tab');
+		jQuery('#live').removeClass('addweb-display-none');
+		jQuery('#fixture').addClass('addweb-display-none');
+		jQuery('#score').addClass('addweb-display-none');
+	});
+	jQuery('#addweb_fixture').click(function(){
+		jQuery('#addweb_fixture').addClass('addweb-sw-active-tab');
+		jQuery('#addweb_score').removeClass('addweb-sw-active-tab');
+		jQuery('#addweb_live').removeClass('addweb-sw-active-tab');
+		jQuery('#fixture').removeClass('addweb-display-none');
+		jQuery('#score').addClass('addweb-display-none');
+		jQuery('#live').addClass('addweb-display-none');
+	});
+
+	//Match Details
+	jQuery('#match-details').click(function(){
+		jQuery('#match-details').addClass('addweb-tab-active');
+		jQuery('#match-details').removeClass('addweb_m_tab_color');
+		jQuery('#match-commentary').addClass('addweb_m_tab_color');
+		jQuery('#match-commentary').removeClass('addweb-tab-active');
+		jQuery('#match_details').removeClass('addweb-display-none');
+		jQuery('#commentary_data').addClass('addweb-display-none');
+	});
+	jQuery('#match-commentary').click(function(){
+		jQuery('#match-commentary').addClass('addweb-tab-active');
+		jQuery('#match-commentary').removeClass('addweb_m_tab_color');
+		jQuery('#match-details').addClass('addweb_m_tab_color');
+		jQuery('#match-details').removeClass('addweb-tab-active');
+		jQuery('#commentary_data').removeClass('addweb-display-none');
+		jQuery('#match_details').addClass('addweb-display-none');
+	});
+});
+
+function fun_refresh_button_match() {
+	jQuery("#ma-refresh").addClass('fa-spin');
+	jQuery("#match-refresh").load(location.href+" #match-refresh", function() {
+		//For Match Short-Code//
+	jQuery("#ma-refresh").removeClass('fa-spin');
+	jQuery('#today-match').click(function(){
+		jQuery('#today-match').addClass('addweb-tab-active');
+		jQuery('#today-match').removeClass('addweb_m_tab_color');
+		jQuery('#live-match').addClass('addweb_m_tab_color');
+		jQuery('#comming-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').addClass('addweb_m_tab_color');
+		jQuery('#live-match').removeClass('addweb-tab-active');
+		jQuery('#comming-match').removeClass('addweb-tab-active');
+		jQuery('#finished-match').removeClass('addweb-tab-active');
+		jQuery('#today_match').removeClass('addweb-display-none');
+		jQuery('#live_match').addClass('addweb-display-none');
+		jQuery('#fixture_match').addClass('addweb-display-none');
+		jQuery('#finished_match').addClass('addweb-display-none');
+	});
+	jQuery('#live-match').click(function(){
+		jQuery('#live-match').addClass('addweb-tab-active');
+		jQuery('#live-match').removeClass('addweb_m_tab_color');
+		jQuery('#today-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').removeClass('addweb-tab-active');
+		jQuery('#comming-match').addClass('addweb_m_tab_color');
+		jQuery('#today-match').removeClass('addweb-tab-active');
+		jQuery('#comming-match').removeClass('addweb-tab-active');
+		jQuery('#live_match').removeClass('addweb-display-none');
+		jQuery('#today_match').addClass('addweb-display-none');
+		jQuery('#fixture_match').addClass('addweb-display-none');
+		jQuery('#finished_match').addClass('addweb-display-none');
+	});
+	jQuery('#comming-match').click(function(){
+		jQuery('#comming-match').addClass('addweb-tab-active');
+		jQuery('#comming-match').removeClass('addweb_m_tab_color');
+		jQuery('#live-match').addClass('addweb_m_tab_color');
+		jQuery('#today-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').addClass('addweb_m_tab_color');
+		jQuery('#finished-match').removeClass('addweb-tab-active');
+		jQuery('#today-match').removeClass('addweb-tab-active');
+		jQuery('#live-match').removeClass('addweb-tab-active');
+		jQuery('#fixture_match').removeClass('addweb-display-none');
+		jQuery('#today_match').addClass('addweb-display-none');
+		jQuery('#live_match').addClass('addweb-display-none');
+		jQuery('#finished_match').addClass('addweb-display-none');
+	});
+	jQuery('#finished-match').click(function(){
+		jQuery('#finished-match').addClass('addweb-tab-active');
+		jQuery('#finished-match').removeClass('addweb_m_tab_color');
+		jQuery('#live-match').addClass('addweb_m_tab_color');
+		jQuery('#today-match').addClass('addweb_m_tab_color');
+		jQuery('#comming-match').addClass('addweb_m_tab_color');
+		jQuery('#comming-match').removeClass('addweb-tab-active');
+		jQuery('#today-match').removeClass('addweb-tab-active');
+		jQuery('#live-match').removeClass('addweb-tab-active');
+		jQuery('#finished_match').removeClass('addweb-display-none');
+		jQuery('#today_match').addClass('addweb-display-none');
+		jQuery('#live_match').addClass('addweb-display-none');
+		jQuery('#fixture_match').addClass('addweb-display-none');
+	});
+	});
+	
+} 
+
+function fun_commentary_widget_refresh() {
+	jQuery("#cm-refresh").addClass('fa-spin');
+	jQuery("#cm-widget-live-refresh").load(location.href+" #cm-widget-live-refresh", function() {
+		jQuery("#cm-refresh").removeClass('fa-spin')
+		jQuery("#addweb-commentary").customScrollbar();
+	});
+} 
+
+function fun_score_widget_refresh() {
+	jQuery("#sc-refresh").addClass('fa-spin');
+	jQuery("#sc-widget-live-refresh").load(location.href+" #sc-widget-live-refresh", function() {
+	jQuery("#sc-refresh").removeClass('fa-spin');
+	jQuery("#score").customScrollbar();
+	jQuery("#addweb_fixture").click(function() {
+		document.getElementById("addweb_fixture").click();
+    	jQuery("#fixture").customScrollbar();
+	});
+	jQuery("#addweb_live").click(function() {
+		document.getElementById("addweb_live").click();
+    	jQuery("#live").customScrollbar();
+	});
+	
+	/*Score Widget jQuery*/
+	jQuery('#addweb_score').click(function(){
+		jQuery('#addweb_score').addClass('addweb-sw-active-tab');
+		jQuery('#addweb_live').removeClass('addweb-sw-active-tab');
+		jQuery('#addweb_fixture').removeClass('addweb-sw-active-tab');
+		jQuery('#score').removeClass('addweb-display-none');
+		jQuery('#fixture').addClass('addweb-display-none');
+		jQuery('#live').addClass('addweb-display-none');
+	});
+	jQuery('#addweb_live').click(function(){
+		jQuery('#addweb_live').addClass('addweb-sw-active-tab');
+		jQuery('#addweb_score').removeClass('addweb-sw-active-tab');
+		jQuery('#addweb_fixture').removeClass('addweb-sw-active-tab');
+		jQuery('#live').removeClass('addweb-display-none');
+		jQuery('#fixture').addClass('addweb-display-none');
+		jQuery('#score').addClass('addweb-display-none');
+	});
+	jQuery('#addweb_fixture').click(function(){
+		jQuery('#addweb_fixture').addClass('addweb-sw-active-tab');
+		jQuery('#addweb_score').removeClass('addweb-sw-active-tab');
+		jQuery('#addweb_live').removeClass('addweb-sw-active-tab');
+		jQuery('#fixture').removeClass('addweb-display-none');
+		jQuery('#score').addClass('addweb-display-none');
+		jQuery('#live').addClass('addweb-display-none');
+	});
+	});
+}

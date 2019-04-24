@@ -1,0 +1,79 @@
+.setting-wrap {
+	margin-top:20px;
+	width: 100%;
+	max-width: 65%;
+}
+
+.addweb-fa-th {
+	font-size: 11px;
+    width: 255px;
+    text-align: left;
+    font-weight: 1px;
+}
+.addweb-date-input {
+	width:150px;
+	height:30px;
+}
+
+.addweb_custom_button .post-edit-link {
+	border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0 10px 1px;
+    text-decoration: none;
+    white-space: nowrap;
+    background: #0085ba none repeat scroll 0 0;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff !important;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+/* Advertise Page */
+#about-settings .advertise {
+  display: inline-block;
+  width: 100%;
+}
+#about-settings .advertise .ad-heading {
+  display: inline-block;
+  width: 100%;
+  margin: 25px 0;
+  font-size: 20px;
+}
+#about-settings .advertise .ad-content {
+  display: inline-block;
+  width: 100%;
+}
+#about-settings .advertise .ad-content .ad-detail {
+  display: inline-block;
+  width: 24%;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding: 25px 0;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 25px;
+}
+#about-settings .advertise .ad-content .ad-detail a {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#about-settings .advertise .ad-content .ad-detail .ad-link { display: block; }
+#about-settings .advertise .ad-content .ad-detail a:focus { box-shadow: none; }
+#about-settings .advertise .ad-content .ad-detail a:hover { color: #00a0d2; }
+#about-settings .advertise .ad-content .ad-detail:last-child {
+  margin-right: 0;
+}
+#about-settings .advertise .ad-content .ad-detail img {
+  max-width: 160px;
+  width: 100%;
+}
